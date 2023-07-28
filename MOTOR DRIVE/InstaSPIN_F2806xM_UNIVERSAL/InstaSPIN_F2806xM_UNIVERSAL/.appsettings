@@ -1,0 +1,7 @@
+{"default": {
+    "connection": "Texas Instruments XDS100v2 USB Debug Probe",
+    "deviceFilter": "",
+    "program": "appProgram.out",
+    "device": "TMS320F28069",
+    "connectionFilter": ""
+}}

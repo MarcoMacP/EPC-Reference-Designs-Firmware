@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Application</title>
+	
+	<script type='text/javascript'>
+		function _switchGCToLibIndex(){
+<!-- [TI_FIX] DO not remove or modify the following line -->
+			var newURL = 'lib/davinci.gc_1_5/WebContent/gc/templates/program/index.html';
+			var original_href = window.location.href;
+			var original_pathname = window.location.pathname; 
+			var app_location_href = original_href.replace('index.html','app.html');
+			var newURLFull = newURL + 
+				'?app_location_href='+app_location_href +
+				'&original_href='+original_href +
+				'&original_pathname='+original_pathname;
+			document.location = newURLFull;     
+		}  
+	</script>
+</head>
+
+<body onload='_switchGCToLibIndex()'>
+</body>
+</html>

@@ -1,0 +1,2405 @@
+{"widgetBindings": [
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableSys",
+        "widgetId": "widget_3747",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableUserParams",
+        "widgetId": "widget_3749",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.Flag_MotorIdentified",
+        "widgetId": "widget_3770",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableRsRecalc",
+        "widgetId": "widget_3755",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enablePowerWarp",
+        "widgetId": "widget_3763",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_Run_Identify",
+        "widgetId": "widget_3765",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableOffsetcalc",
+        "widgetId": "widget_3757",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableForceAngle",
+        "widgetId": "widget_3759",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableFieldWeakening",
+        "widgetId": "widget_3761",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gMotorVars.EstState",
+        "widgetId": "widget_3775",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gMotorVars.CtrlState",
+        "widgetId": "widget_3774",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Rs_Ohm",
+        "widgetId": "widget_3943",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.RsOnLine_Ohm",
+        "widgetId": "widget_3945",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Lsd_H",
+        "widgetId": "widget_3948",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "dec_to_mili"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Lsq_H",
+        "widgetId": "widget_3950",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "dec_to_mili"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Flux_VpHz",
+        "widgetId": "widget_3954",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Rr_Ohm",
+        "widgetId": "widget_3964",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.MagnCurr_A",
+        "widgetId": "widget_3960",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Kp_spd",
+        "widgetId": "widget_3966",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Ki_spd",
+        "widgetId": "widget_3967",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Kp_Idq",
+        "widgetId": "widget_3970",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Ki_Idq",
+        "widgetId": "widget_3971",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.MaxAccel_krpmps",
+        "widgetId": "widget_3985",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpeedRef_krpm",
+        "widgetId": "widget_3974",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Speed_krpm",
+        "widgetId": "widget_3975",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.RsOnLineCurrent_A",
+        "widgetId": "widget_4002",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Is_A",
+        "widgetId": "widget_4006",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_round_four_places"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Iq_A",
+        "widgetId": "widget_4008",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_round_four_places"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Id_A",
+        "widgetId": "widget_4010",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_round_four_places"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Vs",
+        "widgetId": "widget_4025",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_round_four_places"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Vq",
+        "widgetId": "widget_4027",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_round_four_places"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Vd",
+        "widgetId": "widget_4029",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_round_four_places"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Torque_Nm",
+        "widgetId": "widget_3994",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.IqRef_A",
+        "widgetId": "widget_3990",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.IdRef_A",
+        "widgetId": "widget_3991",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.iqFullScaleVoltage_V",
+        "widgetId": "widget_4101",
+        "options": {
+            "dataType": "String",
+            "dataFormat": "%.2f"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.iqFullScaleCurrent_A",
+        "widgetId": "widget_4102",
+        "options": {
+            "dataType": "String",
+            "dataFormat": "%.2f"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.maxCurrent",
+        "widgetId": "widget_4103",
+        "options": {
+            "dataType": "String",
+            "dataFormat": "%.2f"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.iqFullScaleFreq_Hz*gUserParams.zeroSpeedLimit",
+        "widgetId": "widget_4104",
+        "options": {
+            "dataType": "String",
+            "dataFormat": "%.2f"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.systemFreq_MHz",
+        "widgetId": "widget_4064",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.ctrlFreq_Hz / gUserParams.numCtrlTicksPerCurrentTick / 1000",
+        "widgetId": "widget_4053",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.ctrlFreq_Hz / gUserParams.numCtrlTicksPerEstTick / 1000",
+        "widgetId": "widget_4054",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.ctrlFreq_Hz / gUserParams.numCtrlTicksPerSpeedTick / 1000",
+        "widgetId": "widget_4069",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.pwmPeriod_usec",
+        "widgetId": "widget_4051",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "usec_to_KHz"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.ctrlFreq_Hz",
+        "widgetId": "widget_4052",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divideby_1000_andRound"
+        }
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gUserParams.motor_type",
+        "widgetId": "widget_32",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.motor_numPolePairs",
+        "widgetId": "widget_36",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.iqFullScaleFreq_Hz * 60 / gUserParams.motor_numPolePairs",
+        "widgetId": "widget_47",
+        "options": {
+            "dataType": "String",
+            "dataFormat": "%.0f"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.iqFullScaleFreq_Hz*gUserParams.zeroSpeedLimit * 60 / gUserParams.motor_numPolePairs",
+        "widgetId": "widget_51",
+        "options": {
+            "dataType": "String",
+            "dataFormat": "%.0f"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.ctrlFreq_Hz / gUserParams.numCtrlTicksPerTrajTick / 1000",
+        "widgetId": "widget_55",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.numCurrentSensors",
+        "widgetId": "widget_62",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.iqFullScaleFreq_Hz",
+        "widgetId": "widget_67",
+        "options": {
+            "dataType": "String",
+            "dataFormat": "%.0f"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Flux_VpHz * gUserParams.iqFullScaleFreq_Hz",
+        "widgetId": "widget_71",
+        "options": {
+            "dataType": "String",
+            "dataFormat": "%.2f"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Flux_VpHz * gUserParams.ctrlFreq_Hz / gUserParams.numCtrlTicksPerEstTick",
+        "widgetId": "widget_76",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Rs_Ohm * gUserParams.iqFullScaleCurrent_A / gUserParams.iqFullScaleVoltage_V",
+        "widgetId": "widget_86",
+        "options": {
+            "dataType": "String",
+            "dataFormat": "%.4f",
+            "inPreProcessingFunction": "multiply_by_100"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Flux_VpHz / 6.28 / gMotorVars.Lsd_H",
+        "widgetId": "widget_92",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "(gMotorVars.Flux_VpHz * gUserParams.iqFullScaleFreq_Hz)!=0 ? ( (gMotorVars.Flux_VpHz * gUserParams.iqFullScaleFreq_Hz) < gUserParams.iqFullScaleVoltage_V ? 1 : 2) : 0",
+        "widgetId": "widget_4",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "(gMotorVars.Flux_VpHz * gUserParams.ctrlFreq_Hz / gUserParams.numCtrlTicksPerEstTick)!=0 ? (( gMotorVars.Flux_VpHz * gUserParams.ctrlFreq_Hz / gUserParams.numCtrlTicksPerEstTick)> gUserParams.iqFullScaleVoltage_V ? 1 : 2) : 0",
+        "widgetId": "widget_7",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "hal.adcBias.I.value[0]",
+        "widgetId": "widget_11",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_eight_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "hal.adcBias.I.value[1]",
+        "widgetId": "widget_12",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_eight_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "hal.adcBias.I.value[2]",
+        "widgetId": "widget_9",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_eight_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "hal.adcBias.V.value[0]",
+        "widgetId": "widget_17",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_eight_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "hal.adcBias.V.value[1]",
+        "widgetId": "widget_18",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_eight_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "hal.adcBias.V.value[2]",
+        "widgetId": "widget_15",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_eight_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "(gMotorVars.Speed_krpm)-(gMotorVars.SpeedTraj_krpm) ",
+        "widgetId": "widget_33",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "svgencurrent.IgnoreShunt",
+        "widgetId": "widget_61",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "svgencurrent.MinWidth",
+        "widgetId": "widget_73",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpeedTraj_krpm",
+        "widgetId": "widget_5",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpeedRef_krpm != 0 ? ((Q(gMotorVars.Speed_krpm,24) - Q(gMotorVars.SpeedTraj_krpm,24)) / Q(gMotorVars.SpeedTraj_krpm,24))*100 : 0",
+        "widgetId": "widget_37",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_2.DeviceID",
+        "widgetId": "widget_292",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.FAULT",
+        "widgetId": "widget_294",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.GVDD_UV",
+        "widgetId": "widget_296",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.PVDD_UV",
+        "widgetId": "widget_298",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.OTW",
+        "widgetId": "widget_299",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.FETHA_OC",
+        "widgetId": "widget_300",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.FETLA_OC",
+        "widgetId": "widget_301",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.FETHB_OC",
+        "widgetId": "widget_302",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.FETLB_OC",
+        "widgetId": "widget_303",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.FETHC_OC",
+        "widgetId": "widget_304",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.FETLC_OC",
+        "widgetId": "widget_305",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_2.GVDD_OV",
+        "widgetId": "widget_306",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gDrvSpi8301Vars.Stat_Reg_1.OTSD",
+        "widgetId": "widget_297",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.maxNegativeIdCurrent_a ",
+        "widgetId": "widget_78",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.maxCurrent",
+        "widgetId": "widget_211",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8301Vars.RcvCmd",
+        "widgetId": "widget_215",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8301Vars.Ctrl_Reg_1.DRV8301_CURRENT",
+        "widgetId": "widget_226",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8301Vars.Ctrl_Reg_2.OCTW_SET",
+        "widgetId": "widget_253",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8301Vars.SndCmd",
+        "widgetId": "widget_22",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8301Vars.Ctrl_Reg_1.DRV8301_RESET",
+        "widgetId": "widget_64",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8301Vars.Ctrl_Reg_1.PWM_MODE",
+        "widgetId": "widget_239",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8301Vars.Ctrl_Reg_1.OC_MODE",
+        "widgetId": "widget_242",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8301Vars.Ctrl_Reg_2.GAIN",
+        "widgetId": "widget_257",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8301Vars.Ctrl_Reg_2.OC_TOFF",
+        "widgetId": "widget_263",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8301Vars.Ctrl_Reg_1.OC_ADJ_SET",
+        "widgetId": "widget_104",
+        "options": {
+            "dataType": "Long",
+            "outPreProcessingFunction": "times64",
+            "inPreProcessingFunction": "div64"
+        }
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "hal.drv8301.RxTimeOut",
+        "widgetId": "widget_23",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "hal.drv8301.enableTimeOut",
+        "widgetId": "widget_24",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.VdcBus_kV",
+        "widgetId": "widget_1",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "tooltip",
+        "serverBindName": "safety limit in user.h; lab9/9a",
+        "widgetId": "widget_78",
+        "options": {"dataType": "string"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.OverModulation",
+        "widgetId": "widget_3",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "ModulationConvertFromQ24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "disabled",
+        "serverBindName": "",
+        "widgetId": "widget_3",
+        "options": {}
+    },
+    {
+        "propertyName": "visible",
+        "serverBindName": "",
+        "widgetId": "widget_3",
+        "options": {}
+    },
+    {
+        "propertyName": "readOnly",
+        "serverBindName": "",
+        "widgetId": "widget_3",
+        "options": {}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gMotorVars.UserErrorCode",
+        "widgetId": "widget_28",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "ctrl.RoverL",
+        "widgetId": "widget_40",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Rs_Ohm / gMotorVars.Lsd_H",
+        "widgetId": "widget_4110",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelIdGoalSpeed_krpm",
+        "widgetId": "widget_1749",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelIdTorqueRampTime_sec",
+        "widgetId": "widget_1750",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.SpinTAC.VelIdRun",
+        "widgetId": "widget_1730",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.InertiaEstimate_Aperkrpm",
+        "widgetId": "widget_1761",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.FrictionEstimate_Aperkrpm",
+        "widgetId": "widget_1764",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelIdErrorID",
+        "widgetId": "widget_1733",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelCtlBw_radps",
+        "widgetId": "widget_965",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q20",
+            "inPreProcessingFunction": "Divide_by_Q20_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelCtlOutputMin_A",
+        "widgetId": "widget_1774",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "dataFormat": "%.2f",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelCtlOutputMax_A",
+        "widgetId": "widget_1777",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "dataFormat": "%.2f",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.VelCtlErrorID  == 0 ? 0 : 1",
+        "widgetId": "widget_1727",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.VelIdErrorID  == 0 ? 0 : 1",
+        "widgetId": "widget_1735",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.MaxAccel_krpmps",
+        "widgetId": "widget_1113985",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.MaxJrk_krpmps2",
+        "widgetId": "widget_1700",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q20",
+            "inPreProcessingFunction": "Divide_by_Q20"
+        }
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.VelMoveStatus > 0 ? 0:1",
+        "widgetId": "widget_1708",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelMoveErrorID",
+        "widgetId": "widget_1712",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.VelMoveErrorID   == 0 ? 0 : 1",
+        "widgetId": "widget_1716",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "values",
+        "serverBindName": "gState",
+        "widgetId": "widget_1800",
+        "options": {"dataType": "Array"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gGroceryConveyorOnOff",
+        "widgetId": "widget_1837",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gGroceryConveyorProxSensor",
+        "widgetId": "widget_1841",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gGarageDoorButton",
+        "widgetId": "widget_1842",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelPlanErrorID",
+        "widgetId": "widget_1792",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.VelPlanErrorID  == 0 ? 0 : 1",
+        "widgetId": "widget_1794",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelPlanCfgErrorCode",
+        "widgetId": "widget_1799",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelPlanCfgErrorIdx",
+        "widgetId": "widget_1798",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpeedRef_krpm",
+        "widgetId": "widget_1113974",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "(gMotorVars.Speed_krpm)-(gMotorVars.SpeedTraj_krpm) ",
+        "widgetId": "widget_11133",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpeedRef_krpm != 0 ? ((Q(gMotorVars.Speed_krpm,24) - Q(gMotorVars.SpeedTraj_krpm,24)) / Q(gMotorVars.SpeedTraj_krpm,24))*100 : 0",
+        "widgetId": "widget_11137",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Torque_Nm",
+        "widgetId": "widget_1113994",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.IdRef_A",
+        "widgetId": "widget_1113991",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.maxNegativeIdCurrent_a ",
+        "widgetId": "widget_11178",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Kp_Idq",
+        "widgetId": "widget_1113970",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Ki_Idq",
+        "widgetId": "widget_1113971",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "(gMotorVars.SpinTAC.VelMoveTime_ticks * 1000) / (gUserParams.ctrlFreq_Hz / gUserParams.numCtrlTicksPerSpeedTick)",
+        "widgetId": "widget_1721",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.VdcBus_kV",
+        "widgetId": "widget_1111",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "svgencurrent.IgnoreShunt",
+        "widgetId": "widget_11161",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.numCurrentSensors",
+        "widgetId": "widget_11162",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.OverModulation",
+        "widgetId": "widget_1113",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "ModulationConvertFromQ24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "svgencurrent.MinWidth",
+        "widgetId": "widget_11173",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.maxCurrent",
+        "widgetId": "widget_111211",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.MagnCurr_A",
+        "widgetId": "widget_1113960",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Rr_Ohm",
+        "widgetId": "widget_1113964",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Lsq_H",
+        "widgetId": "widget_1113950",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "dec_to_mili"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.RsOnLine_Ohm",
+        "widgetId": "widget_1113945",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Rs_Ohm",
+        "widgetId": "widget_1113943",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Lsd_H",
+        "widgetId": "widget_1113948",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "dec_to_mili"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Flux_VpHz",
+        "widgetId": "widget_1113954",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gMotorVars.UserErrorCode",
+        "widgetId": "widget_11128",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gMotorVars.EstState",
+        "widgetId": "widget_1113775",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gMotorVars.CtrlState",
+        "widgetId": "widget_1113774",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gUserParams.motor_type",
+        "widgetId": "widget_11132",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.motor_numPolePairs",
+        "widgetId": "widget_11136",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enablePowerWarp",
+        "widgetId": "widget_1113763",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableFieldWeakening",
+        "widgetId": "widget_1113761",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableForceAngle",
+        "widgetId": "widget_1113759",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableOffsetcalc",
+        "widgetId": "widget_1113757",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableRsRecalc",
+        "widgetId": "widget_1113755",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableSys",
+        "widgetId": "widget_1113747",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableUserParams",
+        "widgetId": "widget_1113749",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_Run_Identify",
+        "widgetId": "widget_1113765",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.Flag_MotorIdentified",
+        "widgetId": "widget_1113770",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.VelIdStatus",
+        "widgetId": "widget_1758",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.VelCtlStatus",
+        "widgetId": "widget_1728",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.VelMoveStatus",
+        "widgetId": "widget_1718",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.VelMoveCurveType",
+        "widgetId": "widget_1694",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.VelPlanStatus",
+        "widgetId": "widget_1786",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.VelPlanRun",
+        "widgetId": "widget_1788",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gState",
+        "widgetId": "widget_1800",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gWasherState",
+        "widgetId": "widget_1802",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Speed_krpm",
+        "widgetId": "widget_1113975",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "disabled",
+        "serverBindName": "",
+        "widgetId": "widget_1113975",
+        "options": {
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpeedTraj_krpm",
+        "widgetId": "widget_1865",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gTestState",
+        "widgetId": "widget_1826",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gGroceryState",
+        "widgetId": "widget_1831",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gGarageState",
+        "widgetId": "widget_1835",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.IqRef_A",
+        "widgetId": "widget_45",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpeedQEP_krpm",
+        "widgetId": "widget_57",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelCtlErrorID",
+        "widgetId": "widget_1725",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "st_obj.vel.plan.RES",
+        "widgetId": "widget_28013",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gSelectedPlan",
+        "widgetId": "widget_1822",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosConvErrorID",
+        "widgetId": "widget_2485",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.PosConvErrorID",
+        "widgetId": "widget_16157",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gGarageDoorUp",
+        "widgetId": "widget_1843",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gGarageDoorDown",
+        "widgetId": "widget_1844",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableSys",
+        "widgetId": "widget_2221113747",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableUserParams",
+        "widgetId": "widget_2221113749",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_Run_Identify",
+        "widgetId": "widget_2221113765",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.Flag_MotorIdentified",
+        "widgetId": "widget_2221113770",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enablePowerWarp",
+        "widgetId": "widget_2221113763",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableRsRecalc",
+        "widgetId": "widget_2221113755",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableOffsetcalc",
+        "widgetId": "widget_2221113757",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableForceAngle",
+        "widgetId": "widget_2221113759",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Rs_Ohm",
+        "widgetId": "widget_2221113943",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Lsd_H",
+        "widgetId": "widget_2221113948",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Lsq_H",
+        "widgetId": "widget_2221113950",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Flux_VpHz",
+        "widgetId": "widget_2221113954",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Rr_Ohm",
+        "widgetId": "widget_2221113964",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.MagnCurr_A",
+        "widgetId": "widget_2221113960",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.VdcBus_kV",
+        "widgetId": "widget_2221111",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.maxCurrent",
+        "widgetId": "widget_222111211",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.numCurrentSensors",
+        "widgetId": "widget_22211162",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "svgencurrent.IgnoreShunt",
+        "widgetId": "widget_22211161",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.OverModulation",
+        "widgetId": "widget_2221113",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "ModulationConvertFromQ24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "svgencurrent.MinWidth",
+        "widgetId": "widget_22211173",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.motor_numPolePairs",
+        "widgetId": "widget_22211136",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gUserParams.motor_type",
+        "widgetId": "widget_22211132",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gMotorVars.CtrlState",
+        "widgetId": "widget_2221113774",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gMotorVars.EstState",
+        "widgetId": "widget_2221113775",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "value:pm.active.gMotorVars.UserErrorCode",
+        "widgetId": "widget_22211128",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Torque_Nm",
+        "widgetId": "widget_2221113994",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.IqRef_A",
+        "widgetId": "widget_22245",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "dataFormat": "%.3f",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.IdRef_A",
+        "widgetId": "widget_2221113991",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gUserParams.maxNegativeIdCurrent_a ",
+        "widgetId": "widget_22211178",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Kp_Idq",
+        "widgetId": "widget_2221113970",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Ki_Idq",
+        "widgetId": "widget_2221113971",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.Flag_enableFieldWeakening",
+        "widgetId": "widget_2221113761",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.PosCtlStatus",
+        "widgetId": "widget_2221728",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosCtlBw_radps",
+        "widgetId": "widget_222965",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q20",
+            "inPreProcessingFunction": "Divide_by_Q20_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosCtlOutputMin_A",
+        "widgetId": "widget_2221774",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosCtlOutputMax_A",
+        "widgetId": "widget_2221777",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24_two_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosCtlErrorID",
+        "widgetId": "widget_2221725",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.PosCtlErrorID == 0 ? 0 : 1",
+        "widgetId": "widget_2221727",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.PosMoveCurveType",
+        "widgetId": "widget_2221694",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosMoveErrorID",
+        "widgetId": "widget_2221712",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.PosMoveErrorID == 0 ? 0 : 1",
+        "widgetId": "widget_2221716",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.PosMoveStatus > 0 ? 0:1",
+        "widgetId": "widget_2221708",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.PosMoveStatus",
+        "widgetId": "widget_2221718",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosPlanErrorID",
+        "widgetId": "widget_2221792",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.PosPlanErrorID == 0 ? 0 : 1",
+        "widgetId": "widget_2221794",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosPlanCfgErrorIdx",
+        "widgetId": "widget_2221798",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosPlanCfgErrorCode",
+        "widgetId": "widget_2221799",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.PosPlanStatus",
+        "widgetId": "widget_2221786",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gMotorVars.SpinTAC.PosPlanRun",
+        "widgetId": "widget_2221788",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "gMotorVars.RunPositionProfile",
+        "widgetId": "widget_12894",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.PosStepInt_MRev",
+        "widgetId": "widget_2221113974",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.PosStepFrac_MRev",
+        "widgetId": "widget_2221865",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "st_obj.pos.ctl.PosRef_mrev",
+        "widgetId": "widget_2221113975",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "st_obj.pos.ctl.PosFdb_mrev",
+        "widgetId": "widget_22257",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.PositionError_MRev",
+        "widgetId": "widget_22211133",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "DivideQ24_multiply360"
+        }
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "st_obj.pos.conv.STATUS",
+        "widgetId": "widget_7602",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "st_obj.pos.conv.SlipVel",
+        "widgetId": "widget_9870",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "st_obj.pos.conv.Pos_erev",
+        "widgetId": "widget_11322",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "st_obj.pos.conv.Pos_mrev",
+        "widgetId": "widget_14410",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gState",
+        "widgetId": "widget_2221800",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gVendState",
+        "widgetId": "widget_2221802",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gVendFwdButton",
+        "widgetId": "widget_27718",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gVendSelectButton",
+        "widgetId": "widget_12120",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.InertiaEstimate_Aperkrpm",
+        "widgetId": "widget_2544",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.FrictionEstimate_Aperkrpm",
+        "widgetId": "widget_17455",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q24",
+            "inPreProcessingFunction": "Divide_by_Q24"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "(gMotorVars.SpinTAC.PosMoveTime_ticks * 1000) / (gUserParams.ctrlFreq_Hz / gUserParams.numCtrlTicksPerSpeedTick)",
+        "widgetId": "widget_2221721",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosConvErrorID",
+        "widgetId": "widget_2221733",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "gMotorVars.SpinTAC.PosConvErrorID == 0 ? 0 : 1",
+        "widgetId": "widget_2221735",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.MaxVel_krpm",
+        "widgetId": "widget_27294",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.MaxAccel_krpmps",
+        "widgetId": "widget_2221113985",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.MaxJrk_krpmps2",
+        "widgetId": "widget_2221700",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Multiply_by_Q20",
+            "inPreProcessingFunction": "Divide_by_Q20"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.MaxDecel_krpmps",
+        "widgetId": "widget_4526",
+        "options": {
+            "dataType": "String",
+            "outPreProcessingFunction": "Divide1000_multiplyQ24",
+            "inPreProcessingFunction": "DivideQ24_multiply1000"
+        }
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gVendAvailableItem",
+        "widgetId": "widget_12662",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.PosCtlBw_radps",
+        "widgetId": "widget_222944",
+        "options": {
+            "dataType": "Double",
+            "outPreProcessingFunction": "Multiply_by_Q20",
+            "inPreProcessingFunction": "Divide_by_Q20"
+        }
+    },
+    {
+        "propertyName": "progress",
+        "serverBindName": "gWaterLevel",
+        "widgetId": "widget_36460",
+        "options": {"dataType": "number"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.Speed_krpm",
+        "widgetId": "widget_20704",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "DivideQ24_multiply1000_eight_precision"
+        }
+    },
+    {
+        "propertyName": "tooltip",
+        "serverBindName": "for 6x, see controller_obj.RoverL",
+        "widgetId": "widget_40",
+        "options": {"dataType": "string"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "slip.enc_magnetic_angle",
+        "widgetId": "widget_771",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "Divide_by_Q24_five_precision"
+        }
+    },
+    {
+        "propertyName": "tooltip",
+        "serverBindName": "safety limit in user.h; lab9/9a",
+        "widgetId": "widget_79",
+        "options": {"dataType": "string"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gMotorVars.SpinTAC.VelCtlBw_radps",
+        "widgetId": "widget_944",
+        "options": {
+            "dataType": "Double",
+            "outPreProcessingFunction": "Multiply_by_Q20",
+            "inPreProcessingFunction": "Divide_by_Q20"
+        }
+    },
+	{
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_01.FAULT",
+        "widgetId": "widget_111630",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_01.TEMP_FLAG4",
+        "widgetId": "widget_111640",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_01.PVDD_UVFL",
+        "widgetId": "widget_111641",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_01.PVDD_OVFL",
+        "widgetId": "widget_111642",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_01.VDS_STATUS",
+        "widgetId": "widget_111643",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_01.VCPH_UVFL",
+        "widgetId": "widget_111644",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_01.TEMP_FLAG1",
+        "widgetId": "widget_111645",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_01.TEMP_FLAG2",
+        "widgetId": "widget_111646",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_01.TEMP_FLAG3",
+        "widgetId": "widget_111647",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_01.OTW",
+        "widgetId": "widget_111648",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_02.FETHA_VDS",
+        "widgetId": "widget_111673",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_02.FETLA_VDS",
+        "widgetId": "widget_111675",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_02.FETHB_VDS",
+        "widgetId": "widget_111676",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_02.FETLB_VDS",
+        "widgetId": "widget_111677",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_02.FETHC_VDS",
+        "widgetId": "widget_111678",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_02.FETLC_VDS",
+        "widgetId": "widget_111679",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_02.SNS_C_OCP",
+        "widgetId": "widget_111682",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_02.SNS_B_OCP",
+        "widgetId": "widget_111683",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_02.SNS_A_OCP",
+        "widgetId": "widget_111684",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_03.PVDD_UVLO2",
+        "widgetId": "widget_111696",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_03.WD_FAULT",
+        "widgetId": "widget_111698",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_03.OTS",
+        "widgetId": "widget_111699",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_03.VREG_UV",
+        "widgetId": "widget_111701",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_03.AVDD_UVLO",
+        "widgetId": "widget_111702",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_03.VCP_LSD_UVLO2",
+        "widgetId": "widget_111703",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_03.VCPH_UVLO2",
+        "widgetId": "widget_111705",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_03.VCPH_OVLO",
+        "widgetId": "widget_111706",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_03.VCPH_OVLO_ABS",
+        "widgetId": "widget_111707",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_04.FETHA_VGS",
+        "widgetId": "widget_111879",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_04.FETLA_VGS",
+        "widgetId": "widget_111881",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_04.FETHB_VGS",
+        "widgetId": "widget_111882",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_04.FETLB_VGS",
+        "widgetId": "widget_111883",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_04.FETHC_VGS",
+        "widgetId": "widget_111884",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Stat_Reg_04.FETLC_VGS",
+        "widgetId": "widget_111885",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_05.IDRIVEP_HS",
+        "widgetId": "widget_1111007",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_05.IDRIVEN_HS",
+        "widgetId": "widget_1111004",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_05.TDRIVEN",
+        "widgetId": "widget_111996",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_06.IDRIVEP_LS",
+        "widgetId": "widget_1111021",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_06.IDRIVEN_LS",
+        "widgetId": "widget_1111020",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_06.TDRIVEP",
+        "widgetId": "widget_1111016",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_07.TVDS",
+        "widgetId": "widget_1111051",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_07.TBLANK",
+        "widgetId": "widget_1111049",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_07.DEAD_TIME",
+        "widgetId": "widget_1111044",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_07.PWM_MODE",
+        "widgetId": "widget_1111037",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_07.COMM_OPT",
+        "widgetId": "widget_1111033",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0A.GAIN_CS1",
+        "widgetId": "widget_1111092",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_09.WD_DLY",
+        "widgetId": "widget_1111102",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_09.DIS_SNS_OCP",
+        "widgetId": "widget_1111107",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_09.WD_EN",
+        "widgetId": "widget_1111110",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_09.SLEEP",
+        "widgetId": "widget_1111113",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_09.CLR_FLTS",
+        "widgetId": "widget_1111115",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0A.DC_CAL_CH2",
+        "widgetId": "widget_1111125",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0A.DC_CAL_CH1",
+        "widgetId": "widget_1111127",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0B.VREG_UV_LEVEL",
+        "widgetId": "widget_1111155",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0B.DIS_PWRGD",
+        "widgetId": "widget_1111152",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0B.VREF_SCALING",
+        "widgetId": "widget_1111136",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0C.VDS_LEVEL",
+        "widgetId": "widget_1111168",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.ReadCmd",
+        "widgetId": "widget_1111178",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.WriteCmd",
+        "widgetId": "widget_1111180",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.ManWriteAddr",
+        "widgetId": "widget_1111182",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.ManReadAddr",
+        "widgetId": "widget_1111185",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.ManWriteData",
+        "widgetId": "widget_1111187",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.ManReadData",
+        "widgetId": "widget_1111190",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.ManWriteCmd",
+        "widgetId": "widget_1111193",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.ManReadCmd",
+        "widgetId": "widget_1111196",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_09.SET_VCPH_UV",
+        "widgetId": "widget_1111200",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_09.EN_SNS_CLAMP",
+        "widgetId": "widget_1111203",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_09.DIS_GDRV_FAULT",
+        "widgetId": "widget_1111071",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_09.DISABLE",
+        "widgetId": "widget_1111064",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_09.FLIP_OTS",
+        "widgetId": "widget_1111067",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0A.GAIN_CS2",
+        "widgetId": "widget_1111090",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0A.GAIN_CS3",
+        "widgetId": "widget_1111085",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0A.CS_BLANK",
+        "widgetId": "widget_1111074",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0A.DC_CAL_CH3",
+        "widgetId": "widget_1111122",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0B.SLP_DLY",
+        "widgetId": "widget_1111147",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "index",
+        "serverBindName": "gDrvSpi8305Vars.Ctrl_Reg_0C.VDS_MODE",
+        "widgetId": "widget_1111173",
+        "options": {"dataType": "Long"}
+    }
+]}
